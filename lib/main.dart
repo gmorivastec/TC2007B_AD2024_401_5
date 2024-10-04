@@ -1,5 +1,6 @@
 // import works in a similar fashion to react native (and everywhere else)
 import 'package:flutter/material.dart';
+import 'classes/example.dart';
 
 // we have a very explicit entry point in our flutter app
 // there IS a main method available for us! 
@@ -29,11 +30,9 @@ class MainApp extends StatelessWidget {
     // the build method MUST return a widget
     // constant constructor are prefered for performance reasons
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello Guys!'),
-        ),
-      ),
+      home: StatelessExample()
     );
   }
 }
+
+

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-
+import './request.dart';
 
 
 // 2 MAIN TYPES OF WIDGETS
@@ -97,8 +97,10 @@ class _StatefulExampleState extends State<StatefulExample> {
 
         Navigator.push(
           context, 
+          /*
           MaterialPageRoute(builder: (context) => DetailView(
-            externalArg: value,))
+            externalArg: value,))*/
+          MaterialPageRoute(builder: (context) => const RequestDetailWidget())
         );
       },
     );
